@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 플레이어 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="플레이어1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/player1Score"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player1"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="플레이어2"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/player2Score"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player2"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 보드판 레이아웃 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <!-- 버튼0 -->
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼1 -->
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼2 -->
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼3 -->
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼4 -->
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼5 -->
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼6 -->
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼7 -->
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <!-- 버튼8 -->
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#413F43"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+    </GridLayout>
+
+    <!-- 리셋 버튼 -->
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#E1470D"
+        android:text="RESET GAME"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
